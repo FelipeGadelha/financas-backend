@@ -1,0 +1,42 @@
+server:
+  port: 8080
+spring:
+  datasource: 
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/financas?allowPublicKeyRetrieval=true
+    password: admin
+    username: admin
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+
+
+
+### default connection pool
+#spring.datasource.hikari.connectionTimeout=20000
+#spring.datasource.hikari.maximumPoolSize=5
+#
+### PostgreSQL
+#spring.datasource.url=jdbc:postgresql://${DATABASE_HOST:127.0.0.1}:${DATABASE_PORT:5433}/tasks
+#spring.datasource.username=${DATABASE_USER:postgres}
+#spring.datasource.password=${DATABASE_PASSWD:password}
+#
+##drop n create table again, good for testing, comment this in production
+#spring.jpa.hibernate.ddl-auto=${DATABASE_UPDATE:create}
+##spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults = false
+#spring.jpa.database-platform=org.hibernate.dialect.PostgreSQL9Dialect
+
+#spring.datasource.url=jdbc:postgresql://localhost:5432/financas
+#spring.datasource.username=postgres
+#spring.datasource.password=postgres
+#spring.datasource.driver-class-name=org.postgresql.Driver
+## jpa
+#spring.jpa.database-platform=org.hibernate.dialect.PostgreSQL9Dialect
+#spring.jpa.hibernate.ddl-auto=update
+#spring.jpa.properties.hibernate.show_sql=true
+#spring.jpa.properties.hibernate.format_sql=true
