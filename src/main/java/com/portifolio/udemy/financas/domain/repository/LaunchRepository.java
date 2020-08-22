@@ -3,9 +3,9 @@ package com.portifolio.udemy.financas.domain.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.portifolio.udemy.financas.domain.model.launch;
+import com.portifolio.udemy.financas.domain.model.Launch;
 
 @Repository
-public interface LaunchRepository extends JpaRepository<launch, Long>{
+public interface LaunchRepository extends JpaRepository<Launch, Long>{
 
 }

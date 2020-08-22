@@ -19,6 +19,7 @@ import com.portifolio.udemy.financas.domain.exception.AuthenticationException;
 import com.portifolio.udemy.financas.domain.exception.BusinessException;
 import com.portifolio.udemy.financas.domain.model.User;
 import com.portifolio.udemy.financas.domain.repository.UserRepository;
+import com.portifolio.udemy.financas.domain.serviceImpl.UserServiceImpl;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest

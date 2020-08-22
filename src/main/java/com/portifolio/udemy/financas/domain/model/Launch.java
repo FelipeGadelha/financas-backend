@@ -15,7 +15,7 @@ import com.portifolio.udemy.financas.domain.enums.StatusLaunch;
 import com.portifolio.udemy.financas.domain.enums.TypeLaunch;
 
 @Entity
-public class launch {
+public class Launch {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -128,7 +128,7 @@ public class launch {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		launch other = (launch) obj;
+		Launch other = (Launch) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;

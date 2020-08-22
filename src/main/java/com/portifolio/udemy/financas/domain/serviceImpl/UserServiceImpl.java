@@ -1,4 +1,4 @@
-package com.portifolio.udemy.financas.domain.service;
+package com.portifolio.udemy.financas.domain.serviceImpl;
 
 import java.util.Optional;
 
@@ -11,6 +11,7 @@ import com.portifolio.udemy.financas.domain.exception.AuthenticationException;
 import com.portifolio.udemy.financas.domain.exception.BusinessException;
 import com.portifolio.udemy.financas.domain.model.User;
 import com.portifolio.udemy.financas.domain.repository.UserRepository;
+import com.portifolio.udemy.financas.domain.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService{
